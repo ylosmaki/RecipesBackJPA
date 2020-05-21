@@ -7,7 +7,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
-//lisää @CrossOrigin integraatiovaiheessa
+@CrossOrigin(origins= "http://localhost:3000")
 public class RecipeController {
     @Autowired
     private MealRepository mealRepository;
